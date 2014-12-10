@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KIM28082014</string>
+    <string name="Date">DATE</string>
+    <string name="Month">MONTH</string>
+    <string name="Year">YEAR</string>
+    <string name="titleAdd">Add Memory</string>
+    <string name="titleMemory">My Memory</string>
+    <string name="titleTraining">Training Memory</string>
+    <string name="titleSetting">My Profile</string>
+    <string name="promptWhen">Date</string>
+    <string name="promptTime">Time</string>
+    <string name="promptWhere">Location</string>
+    <string name="promptWho">Who are you with?</string>
+    <string name="promptEvent">Event</string>
+    <string name="promptPurpose">Details</string>
+    <string name="promptActivity">I am</string>
+    <string name="promptFeeling">I feel</string>
+    <string name="promptNotes">Important things</string>
+
+    <string-array name="time">
+        <item >Morning</item>
+        <item >Afternoon</item>
+        <item>Evening</item>
+        
+    </string-array>
+    <string-array name="event">
+        <item>Anniversary</item>
+        <item>Appointment</item>
+        <item >Birthday</item>
+        <item>Breakfast</item>
+        <item>Dinner</item>
+        <item>Holiday</item>
+        <item>Lunch</item>
+        <item>Meeting</item>
+        <item>Party</item>
+        <item>Routine</item>
+        <item >Wedding</item>
+        <item >Weekend</item>
+
+    </string-array>
+    <string-array name="activity">
+        <item>drinking</item>
+        <item>eating</item>
+        <item>exercising</item>
+        <item>reading</item>
+        <item>studying</item>
+        <item>shopping</item>
+        <item >talking</item>
+        <item >watching</item>
+        <item >working</item>
+
+    </string-array>
+    <string-array name="feeling">
+        <item >Normal</item>
+        <item >Happy</item>
+        <item >Exciting</item>
+        <item >Angry</item>
+        <item >Sad</item>
+    </string-array>
+
+    
+    
+
+</resources>

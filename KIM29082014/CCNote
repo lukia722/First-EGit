@@ -1,0 +1,34 @@
+28/08
+Parcel is a serialization mechanism provided by Android. 
+In order to write an object to a parcel, that object should implement the interface "Parcelable".
+
+Implement a Parcelable object in an Android application to pass complex data from one activity to another activity.
+
+In order to define a custom parcelable class, wee need to implement the the interface Parcelable in the class
+and it must override the methods "describeContents()" and "writeToParcel(Parcel dest, int flags)".
+It is also necessary to create a public static member variable "CREATOR" that should implement the interface "Parcelable.Creator<T>".
+
+AddActivity: Using the MemoryItem object has to set the value for each filed.
+
+						MemoryItem memoryItem = new MemoryItem();
+						memoryItem.setDate(mDate);
+						memoryItem.setTime(strTime);
+
+set a object --> memoryItem						
+						bundle.putParcelable("MemoryItem",memoryItem);
+						
+DisplayActivity: Getting the MemoryItem from Bundle
+		
+		Bundle bundle = getIntent().getExtras();
+		MemoryItem memoryItem = bundle.getParcelable("MemoryItem");
+		
+		
+displaying the value for each filed		
+		
+		txtDate.setText(memoryItem.getDate());
+		txtTime.setText(memoryItem.getTime());
+		
+29/08
+Completing all AddMemory and sent information on Bundle to Displaying.
+Next Week: Combining with SQLite
+ 

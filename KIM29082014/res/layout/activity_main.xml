@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="8dp"
+        android:layout_rowSpan="2"
+        android:text="@string/Date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/txvMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txvDate"
+        android:layout_gravity="left"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/txvDate"
+        android:text="@string/Month"
+        android:textSize="20sp" />
+
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="fill_vertical"
+        android:layout_row="2" />
+
+    <TextView
+        android:id="@+id/txvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txvMonth"
+        android:layout_below="@+id/txvMonth"
+        android:text="@string/Year"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btnMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAdd"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:src="@android:drawable/ic_menu_agenda" />
+
+    <ImageButton
+        android:id="@+id/btnTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAdd"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/btnMemory"
+        android:src="@android:drawable/ic_input_get" />
+
+    <ImageButton
+        android:id="@+id/btnSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMemory"
+        android:layout_alignTop="@+id/btnTraining"
+        android:src="@android:drawable/ic_menu_manage" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvYear"
+        android:layout_marginTop="121dp"
+        android:layout_toRightOf="@+id/txvDate"
+        android:src="@android:drawable/ic_menu_edit" />
+
+</RelativeLayout>
